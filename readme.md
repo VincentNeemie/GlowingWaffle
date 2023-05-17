@@ -1,5 +1,13 @@
- # GlowingWaffle
+<h1 align="center">
+   GlowingWaffle
+   </h1>
  GlowingWaffle is a Python class that allows you to perform basic penetration testing on a target system and generate a PDF report of the test results.
+ <p align="center">
+     <a href="https://github.com/VincentNeemie/GlowingWaffle">
+      <img src="https://repository-images.githubusercontent.com/642096176/7166164b-a3ba-4408-9d4a-12c919b478d7" alt="alt text">
+     </a>
+   </p>
+   
  ## Features
  The GlowingWaffle class currently supports the following features:
 - Nmap scan of the target system
@@ -18,28 +26,48 @@
 - reportlab module
  ## Usage
  To use the GlowingWaffle class, follow these steps:
+ 
 1. Clone the repository or download the source code.
 2. Import the GlowingWaffle class in your Python script:
-from GlowingWaffle import GlowingWaffle
-1. Create an instance of the GlowingWaffle class with the IP address or hostname of the target you want to test:
-target = "192.168.1.1"
-   waffle = GlowingWaffle(target)
-1. Call the  `nmap_scan()` ,  `wireshark_capture()` , and  `metasploit_exploit()`  methods of the  `waffle`  instance to perform the respective tests:
-waffle.nmap_scan()
-   waffle.wireshark_capture()
-   waffle.metasploit_exploit()
-1. Call the  `create_report()`  method of the  `waffle`  instance to generate a PDF report of the test results:
-waffle.create_report()
-1. The PDF report will be saved in the same directory as the Python script. You can customize the layout of the report by modifying the  `report()`  method in the  `GlowingWaffle`  class.
+
+`from GlowingWaffle import GlowingWaffle`
+
+3. Create an instance of the GlowingWaffle class with the IP address or hostname of the target you want to test:
+
+`target = "192.168.1.1"`
+`waffle = GlowingWaffle(target)`
+
+4. Call the  `nmap_scan()` ,  `wireshark_capture()` , and  `metasploit_exploit()`  methods of the  `waffle`  instance to perform the respective tests:
+
+`waffle.nmap_scan()`
+
+`waffle.wireshark_capture()`
+
+`waffle.metasploit_exploit()`
+
+5. Call the  `create_report()`  method of the  `waffle`  instance to generate a PDF report of the test results:
+ 
+`waffle.create_report()`
+
+6. The PDF report will be saved in the same directory as the Python script. You can customize the layout of the report by modifying the  `report()`  method in the  `GlowingWaffle`  class.
  ## Example
  Here's an example usage of the GlowingWaffle class:
-from GlowingWaffle import GlowingWaffle
- target = "192.168.1.1"
-waffle = GlowingWaffle(target)
- waffle.nmap_scan()
-waffle.wireshark_capture()
-waffle.metasploit_exploit()
- waffle.create_report()
+
+`from GlowingWaffle import GlowingWaffle`
+
+`target = "192.168.1.1"`
+
+`waffle = GlowingWaffle(target)`
+
+`waffle.nmap_scan()`
+
+`waffle.wireshark_capture()`
+
+`waffle.metasploit_exploit()`
+
+`waffle.create_report()`
+
+ 
 This will generate a PDF report of the security test results for the target system.
  ## License
  GlowingWaffle is available under the MIT License. See the LICENSE file for more information.
