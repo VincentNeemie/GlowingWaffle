@@ -1,5 +1,13 @@
- # GlowingWaffle
+<h1 align="center">
+   GlowingWaffle
+   </h1>
  GlowingWaffle is a Python class that allows you to perform basic penetration testing on a target system and generate a PDF report of the test results.
+ <p align="center">
+     <a href="https://github.com/VincentNeemie/GlowingWaffle">
+      <img src="https://repository-images.githubusercontent.com/642096176/7166164b-a3ba-4408-9d4a-12c919b478d7" alt="alt text">
+     </a>
+   </p>
+   
  ## Features
  The GlowingWaffle class currently supports the following features:
 - Nmap scan of the target system
